@@ -8,16 +8,16 @@ const backgroundTrack = (track)=>{
 
 playIcon.addEventListener('click',()=>{
     playIcon.style.display = "none"
-    backgroundTrack("coding.mp3")
+    backgroundTrack("two_steps_from_hell_heart_of_courage_extended_version_mp3_15520.mp3")
     audioTrack.play()
 })
 
 setInterval(()=>{
     let currentDate = new Date().getTime()
-    let challengeDate =  new Date("Aug 5, 2023 23:59:59").getTime()
+    let challengeDate =  new Date("Sep 24, 2023 23:59:59").getTime()
 
     if(currentDate >= challengeDate){
-        document.querySelector('h2').innerHTML =  " The Challenge Is Started"
+        document.querySelector('h2').innerHTML =  " The Challenge Has Started"
     }else{
 
         let timeElapsed = challengeDate - currentDate
