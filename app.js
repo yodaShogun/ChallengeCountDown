@@ -3,6 +3,7 @@ const audioTrack = new Audio()
 
 const backgroundTrack = (track)=>{
     audioTrack.src =  track
+    audioTrack.loop = true
 }
 
 playIcon.addEventListener('click',()=>{
