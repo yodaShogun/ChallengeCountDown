@@ -17,7 +17,7 @@ setInterval(()=>{
     let challengeDate =  new Date("Aug 5, 2023 23:59:59").getTime()
 
     if(currentDate >= challengeDate){
-        document.querySelector('h2').innerHTML =  " The Challenge Is Started"
+        document.querySelector('h2').innerHTML =  " The Challenge Has Started"
     }else{
 
         let timeElapsed = challengeDate - currentDate
