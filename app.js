@@ -1,6 +1,6 @@
 setInterval(()=>{
     let currentDate = new Date().getTime()
-    let challengeDate =  new Date("Aug 6, 2023 8:0:0").getTime()
+    let challengeDate =  new Date("Aug 5, 2023 23:59:59").getTime()
 
     if(currentDate >= challengeDate){
         document.querySelector('h2').innerHTML =  " The Challenge Is Started"
