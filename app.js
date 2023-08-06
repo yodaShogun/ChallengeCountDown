@@ -8,7 +8,7 @@ const backgroundTrack = (track)=>{
 
 playIcon.addEventListener('click',()=>{
     playIcon.style.display = "none"
-    backgroundTrack("challenge.mp3")
+    backgroundTrack("coding.mp3")
     audioTrack.play()
 })
 
@@ -18,9 +18,6 @@ setInterval(()=>{
 
     if(currentDate >= challengeDate){
         document.querySelector('h2').innerHTML =  " The Challenge Is Started"
-        audioTrack.pause()
-        backgroundTrack("coding.mp3")
-        audioTrack.play()
     }else{
 
         let timeElapsed = challengeDate - currentDate
