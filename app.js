@@ -8,7 +8,7 @@ const backgroundTrack = (track)=>{
 
 playIcon.addEventListener('click',()=>{
     playIcon.style.display = "none"
-    backgroundTrack("challenge.mp3")
+    backgroundTrack("coding.mp3")
     audioTrack.play()
 })
 
