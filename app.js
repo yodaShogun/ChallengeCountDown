@@ -1,3 +1,16 @@
+const playIcon = document.querySelector("#prime")
+const audioTrack = new Audio()
+
+const backgroundTrack = (track)=>{
+    audioTrack.src =  track
+}
+
+playIcon.addEventListener('click',()=>{
+    playIcon.style.display = "none"
+    backgroundTrack("challenge.mp3")
+    audioTrack.play()
+})
+
 setInterval(()=>{
     let currentDate = new Date().getTime()
     let challengeDate =  new Date("Aug 5, 2023 23:59:59").getTime()
